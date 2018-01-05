@@ -65,7 +65,7 @@ th {
 }
 .rich_media_area_primary {
     position:relative;
-    padding:0px 15px;
+    padding:20px 15px 15px;
     background-color:#fff
 }
 .rich_media_area_primary:before {
@@ -127,6 +127,7 @@ th {
 }
 
 .rich_media_area_primary .rich_media_banner {
+    display: none;
     margin-right: -15px;
     margin-bottom: 20px;
     margin-left: -15px;
