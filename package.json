@@ -1,0 +1,29 @@
+{
+  "name": "article_spider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "out/index.js",
+  "scripts": {
+    "start": "node out/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xzper",
+  "license": "ISC",
+  "dependencies": {
+    "crawler": "^1.0.5",
+    "fs-extra": "^4.0.1",
+    "lodash": "^4.17.4",
+    "step-pipe": "^0.1.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.2",
+    "@types/fs-extra": "^4.0.0",
+    "@types/lodash": "^4.14.71",
+    "@types/node": "^8.0.19",
+    "@types/request": "^2.0.0",
+    "@types/winston": "^2.3.4",
+    "tslint": "^4.5.1",
+    "typescript": "^2.4.2"
+  }
+}

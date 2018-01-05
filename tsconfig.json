@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es2016",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "lib": [
+            "dom",
+            "es2016"
+        ],
+        "rootDir": "src",
+        "outDir": "./out"
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
