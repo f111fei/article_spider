@@ -1,14 +1,14 @@
 import * as path from 'path';
 import * as fs from 'fs-extra';
+import { WechatParseOptions } from '../interface';
 
 interface Config {
+    name: string;
     ruokuai: {
         username: string;
         password: string;
     };
-    wechat: {
-        cookie: string;
-    };
+    wechat: WechatParseOptions;
 }
 
 export const config: Config = fs.readJSONSync(path.join(__dirname, '../../config.json'), { encoding: 'utf8' });
@@ -17,7 +17,7 @@ export const wechat = {
     path: '/mp/profile_ext',
     querystring: {
         action: 'getmsg',
-        __biz: '',
+        __biz: config.wechat.biz,
         f: 'json',
         offset: 10,
         count: 10,
@@ -27,6 +27,7 @@ export const wechat = {
         key: '777',
         pass_ticket: '',
         wxtoken: '',
+        appmsg_token: config.wechat.appmsg_token,
         x5: '0'
     },
     headers: {

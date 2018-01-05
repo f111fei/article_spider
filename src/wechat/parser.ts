@@ -1,20 +1,12 @@
 import * as path from 'path';
 import * as _ from 'lodash';
 import * as $ from 'cheerio';
-import { Page, PageList, PageItem, WechatArticle, WechatArticleInfo } from '../interface';
+import { Page, PageList, PageItem, WechatParseOptions, WechatArticle, WechatArticleInfo } from '../interface';
 import { wechat } from '../constants';
 import * as utils from '../utils';
 import db from '../database';
 import * as sougou from './sougou';
 import * as crawlerService from '../services/crawlerService';
-
-export interface WechatParseOptions {
-    start?: number;
-    maxNum?: number;
-    force?: boolean;
-    mode?: 'offline' | 'sougou' | 'all';
-    biz?: string;
-}
 
 export class WechatParser {
 
@@ -91,12 +83,11 @@ export class WechatParser {
     }
 
     private async crawlPage(index: number) {
+        const pageIndex = index;
         const qs = {
             ...wechat.querystring,
-            __biz: this.options.biz
+            offset: index * wechat.querystring.count
         };
-        const pageIndex = index;
-        qs.offset = index * qs.count;
         const res = await crawlerService.search({
             uri: wechat.domain + wechat.path,
             qs: qs,

@@ -1,8 +1,8 @@
 import * as fs from 'fs-extra';
 import * as $ from 'cheerio';
 import * as path from 'path';
-import { WechatParser, WechatParseOptions } from './parser';
-import { WechatArticle } from '../interface';
+import { WechatParser } from './parser';
+import { WechatArticle, WechatParseOptions } from '../interface';
 import * as utils from '../utils';
 import db from '../database';
 import { PipeContext, Step } from 'step-pipe';

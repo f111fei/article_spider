@@ -1,4 +1,13 @@
 // wechat
+export interface WechatParseOptions {
+    start?: number;
+    maxNum?: number;
+    mode?: 'offline' | 'sougou' | 'all';
+    biz?: string;
+    cookie?: string;
+    appmsg_token?: string;
+}
+
 export interface Page {
     can_msg_continue: boolean;
     errmsg: string;

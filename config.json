@@ -1,9 +1,15 @@
 {
+    "name": "nasawatch",
     "ruokuai": {
-        "username": "f111fei",
-        "password": "xxxx"
+        "username": "test",
+        "password": "test"
     },
     "wechat": {
-        "cookie": ""   
+        "mode": "all",
+        "start": 0,
+        "maxNum": 10,
+        "biz": "MjM5NjI5Mjc2MA==",
+        "appmsg_token": "938_lBqvZ7PHdVvJ6XHKvNvao0mUMwusH1hpY5VhNg~~",
+        "cookie": "RK=oc16c6jOay; pac_uid=1_844456063; eas_sid=e155V0f395Y3I8G4m0f5n7d8U5; pgv_pvi=6712883200; tvfe_boss_uuid=b47dd1d28e0c3998; o_cookie=844456063; gaduid=59e45ab1adc55; pgv_pvid=6417409870; ua_id=OXJfKwg9V6frZKR9AAAAALymQMkENA3wXr4gU9Ac6hU=; mm_lang=en_US; _qpsvr_localtk=0.051239900422683116; pgv_si=s9197009920; ptisp=cnc; ptcz=0ec24ee12f8ec98c07df1832ea16d0660641d370fa98fc680a3c645b84eed1db; uin=o0844456063; skey=@GfQ4G1QR6; pt2gguin=o0844456063; wxtokenkey=35cb0b9fd3435b251138e65ac03fe6ea48cbf2d5cb3fdbd745bd580b9e1b98b0; rewardsn=1f0ceb18255e2be7f240; wxuin=991798244; devicetype=Windows10; version=62060028; lang=zh_CN; pass_ticket=AQA+sr3Hxo0rHHfzIaC3sRbBGAX9AWkTh88cwLO0DPtBnHbPSzmWArh2VNbGN1nr; wap_sid2=COTH9tgDElxacWFFUWRuTHBwSXVZNjBpdjU2T2ZBbVQ1NHhwQVhUb3pjVG1tZ3JsSDVubk9Xczk1V0hoOWYzV3JyeW5ZU0hLbEExSWc2XzBfUXNadUZ0cDJlY05RNm9EQUFBfjCW1bzSBTgNQJVO"
     }
 }
