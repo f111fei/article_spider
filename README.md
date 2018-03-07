@@ -107,21 +107,21 @@ interface Config {
 
 ![](/images/2.png)
 
-3.如果在浏览器中打开出现 `请在微信客户端打开链接。` 的提示，说明这个URL经过加密了，请按照下面操作获取正确的URL。
+3.如果在浏览器中打开出现 `请在微信客户端打开链接。` 的提示，说明这个URL经过加密了，请按照下面操作获取正确的URL。否则跳过此步。
 
 关闭微信客户端，找到微信桌面客户端可执行程序的位置。使用命令行启动程序：
 
 Windows下通常是:
 
-    "C:\Program Files (x86)\Tencent\WeChat\WeChat.exe" --remote-debug-port=9222
+    "C:\Program Files (x86)\Tencent\WeChat\WeChat.exe" --remote-debugging-port=9222
 
 Mac下通常是:
 
-    "/Applications/WeChat/MacOS/Wechat" --remote-debug-port=9222
+    "/Applications/WeChat.app/Contents/MacOS/WeChat" --remote-debugging-port=9222
 
 按照步骤1打开历史消息页。
 
-使用Chrome浏览器打开URL  `http://localhost:9222/json`。
+使用Chrome浏览器打开URL  `http://127.0.0.1:9222/json`。
 
 ![](/images/3.png)
 
