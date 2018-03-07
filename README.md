@@ -113,7 +113,7 @@ interface Config {
 
 Windows下通常是:
 
-    "C:\Program Files (x86)\Tencent\WeChat\WeChat.exe" --remote-debugging-port=9222
+    "C:\Program Files (x86)\Tencent\WeChat\WeChat.exe" --remote-debugging-port=9222
 
 Mac下通常是:
 
