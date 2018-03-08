@@ -129,6 +129,8 @@ Mac下通常是:
 
 4.在历史消息页中，点击右键 ---- 检查，打开Chrome开发者工具 ---- 切换到Network页签 ---- 刷新浏览器。在右侧找到cookie, biz, appmsg_token等字段填入`config.json`中。
 
+> 需要向下滚动列表页加载下一页找到 `https://mp.weixin.qq.com/mp/profile_ext?action=getmsg` 开头的请求，查看其参数。
+
 ![](/images/4.png)
 
 这些字段可能几个小时之后就会失效，可以重新按照以上步骤重新获取。
